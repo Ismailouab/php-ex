@@ -8,14 +8,14 @@
 </head>
 <body>
 <div class="container">
-    <form  method="post">
+    <form  method="get">
          <label class="form-check-label" >l'age de l'enfant :</label>
          <input class="form-control mt-3" type="text" name="age" >
-         <input class="btn btn-secondary ms-4 mt-4" type="submit" value="Calculate">
+         <input class="btn btn-secondary ms-4 mt-4" type="submit" value="submit">
     </form>
   <?php
-     if(isset($_POST['submit'])){
-        $age=$_POST['age'];
+     if(isset($_GET['submit'])){
+        $age=$_GET['age'];
         if ($age>=6 && $age<=7){
            echo " « Poussin »";
         } 
